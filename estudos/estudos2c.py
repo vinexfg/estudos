@@ -1,21 +1,23 @@
-from estudos1 import MyOpen
-from contextlib import contextmanager
 
 
 
-
-@contextmanager
-def my_open(caminho_arquivo, modo):
-    try:
-        arquivo = open(caminho_arquivo, modo, encoding= 'utf8')
-        yield arquivo
-    except Exception as e:
-        print('Ocorreu erro', e)
-    finally:
-        print('Fechando arquivo')
-        arquivo.close()
-
+class Time:
+    def __init__(self, name):
+        self.name = name
     
+    def __repr__(self):
+        class_name = self.__class__.__name__
+        class_dict = self.__dict__
+        class_repr = f'{class_name} ({class_dict})'
+        return class_repr
+    
+class Planeta:
+    def __init__(self, name):
+        self.name = name
 
-with my_open('aula689.txt', 'w') as arquivo:
-    arquivo.write('teste1/n')
+brasil = Time('Brasil')
+portugal = Time('Portugal')
+
+
+
+        
