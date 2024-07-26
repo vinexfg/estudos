@@ -21,8 +21,9 @@ portugal = Time('Portugal')
 
 
 
-class CPF:
+class Validar:
     def __init__(self,number):
         self.number = number
 
+    def primeiro_digito(self):
         
