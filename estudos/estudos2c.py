@@ -35,3 +35,6 @@ class Validar:
                 return False
             else:
                 print(f'o seu {cpf_digitado} nao esta correto')
+
+    def seg_digito(self):
+        pass
