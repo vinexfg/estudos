@@ -31,3 +31,7 @@ class Validar:
         for digito in cpf_digitado:
             numero.append(digito)
             print(numero)
+            if '0' not in numero:
+                return False
+            else:
+                print(f'o seu {cpf_digitado} nao esta correto')
