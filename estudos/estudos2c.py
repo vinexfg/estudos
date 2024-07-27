@@ -26,4 +26,5 @@ class Validar:
         self.number = number
 
     def primeiro_digito(self):
-        
+        cpf_digitado = '18140460678'
+        cpf_digitado = nove_digitos[:9]
