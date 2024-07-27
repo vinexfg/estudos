@@ -21,20 +21,3 @@ portugal = Time('Portugal')
 
 
 
-class Validar:
-    def __init__(self,number):
-        self.number = number
-
-    def primeiro_digito(self):
-        numero = []
-        cpf_digitado = '18140460678'
-        for digito in cpf_digitado:
-            numero.append(digito)
-            print(numero)
-            if '0' not in numero:
-                return False
-            else:
-                print(f'o seu {cpf_digitado} nao esta correto')
-
-    def seg_digito(self):
-        pass
