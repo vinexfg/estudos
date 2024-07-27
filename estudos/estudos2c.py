@@ -30,3 +30,4 @@ class Validar:
         cpf_digitado = '18140460678'
         for digito in cpf_digitado:
             numero.append(digito)
+            print(numero)
