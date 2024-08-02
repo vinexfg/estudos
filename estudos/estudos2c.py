@@ -1,4 +1,4 @@
-import pygame
+
 
 
 """GAME do meu jeito"""
