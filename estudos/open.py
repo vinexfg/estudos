@@ -3,14 +3,15 @@ from estudos2c import Person, DataCollector
 
 def main():
     collector = DataCollector()
+    data = Person()
     
     print('MENU')
     print()
     print()
     print('hoose one of the options: ')
-    option_allowed = ['1', '2']
+    option_allowed = ['1', '2', '3']
     while True:
-        option = input('[1]ADD (person)  [2]exit')
+        option = input('[1]ADD (person)  [2]exit [3]data')
 
         if option not in option_allowed:
             print('number invalid')
@@ -21,4 +22,7 @@ def main():
         
         elif option == '2':
             break
+        
+        elif option == '3':
+            data.__repr__()
 main()
