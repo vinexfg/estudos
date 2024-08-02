@@ -19,7 +19,7 @@ class Person:
 
 class DataCollector:
 
-    def __init__(self, data):
+    def __init__(self):
         self.data = []
 
 
@@ -27,7 +27,6 @@ class DataCollector:
         self.data.append(person)
 
     def get_data(self):
-        self.store_data()
         questions = [
             'name',
             'age',
@@ -37,5 +36,14 @@ class DataCollector:
         ]
         response = {}
         for quest in questions:
-            response = input(f'Please enter your {quest}: ')
-            response[quest] = response
+            answer = input(f'Please enter your {quest}: ')
+            response[quest] = answer
+
+        person = Person(
+            name=response['name'],
+            age=response['age'],
+            sex=response['sex'],
+            skill=response['skill'],
+            level=response['level']
+            )
+        self.store_data(person)
