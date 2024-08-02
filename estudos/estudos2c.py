@@ -15,11 +15,16 @@ class Person:
     def __repr__(self):
         return (f'Person: (name={self.name} / age={self.age} / sex={self.sex} / '
                 f'skill={self.skill} / level={self.level})')
-    
 
-    def store_data(self):
-        data = []
-        return data
+
+class DataCollector:
+
+    def __init__(self, data):
+        self.data = []
+
+
+    def store_data(self, person):
+        self.data.append(person)
 
     def get_data(self):
         self.store_data()
@@ -27,8 +32,10 @@ class Person:
             'name',
             'age',
             'sex',
-            'skill'
+            'skill',
+            'level'
         ]
+        response = {}
         for quest in questions:
             response = input(f'Please enter your {quest}: ')
-            self.data
+            response[quest] = response
