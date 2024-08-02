@@ -1,4 +1,4 @@
-from estudos1 import Person, DataCollector
+from estudos2c import Person, DataCollector
 
 
 def main():
@@ -19,3 +19,6 @@ def main():
         elif option == '1':
             collector.get_data()
         
+        elif option == '2':
+            break
+main()
