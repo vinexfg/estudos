@@ -11,7 +11,8 @@ def main():
     print('hoose one of the options: ')
     option_allowed = ['1', '2', '3']
     while True:
-        option = input('[1]ADD (person)  [2]exit [3]data')
+        option = input('[1]ADD (person)  [2]exit [3]data:  ')
+        print()
 
         if option not in option_allowed:
             print('number invalid')
@@ -24,5 +25,5 @@ def main():
             break
         
         elif option == '3':
-            data.__repr__()
+            Person.list_person()
 main()

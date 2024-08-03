@@ -15,7 +15,10 @@ class Person:
     def __repr__(self):
         return (f'Person: (name={self.name} / age={self.age} / sex={self.sex} / '
                 f'skill={self.skill} / level={self.level})')
-
+    
+    def list_person(self):
+        print(f'Person: (name={self.name} / age={self.age} / sex={self.sex} / '
+                f'skill={self.skill} / level={self.level})')
 
 class DataCollector:
 
