@@ -3,23 +3,6 @@
 
 """GAME do meu jeito"""
 
-
-class Person:
-    def __init__(self, name =None, age= None, sex= None, skill= None, level= None):
-        self.name = name
-        self.age = age
-        self.sex = sex
-        self.skill = skill
-        self.level = level
-
-    def __repr__(self):
-        return (f'Person: (name={self.name} / age={self.age} / sex={self.sex} / '
-                f'skill={self.skill} / level={self.level})')
-    
-    def list_person(self):
-        print(f'Person: (name={self.name} / age={self.age} / sex={self.sex} / '
-                f'skill={self.skill} / level={self.level})')
-
 class DataCollector:
 
     def __init__(self):
@@ -50,3 +33,16 @@ class DataCollector:
             level=response['level']
             )
         self.store_data(person)
+
+    
+class Person(DataCollector):
+    def __init__(self, name =None, age= None, sex= None, skill= None, level= None):
+        self.name = name
+        self.age = age
+        self.sex = sex
+        self.skill = skill
+        self.level = level
+
+    def list_person(self):
+        print(f'Person: (name={self.name} / age={self.age} / sex={self.sex} / '
+            f'skill={self.skill} / level={self.level})')
