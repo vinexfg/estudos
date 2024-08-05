@@ -44,5 +44,10 @@ class Person(DataCollector):
         self.level = level
 
     def list_person(self):
-        print(f'Person: (name={self.name} / age={self.age} / sex={self.sex} / '
-            f'skill={self.skill} / level={self.level})')
+        if self.data:
+            print(f'Person: (name={self.name} / age={self.age} / sex={self.sex} / '
+                f'skill={self.skill} / level={self.level})')
+        else:
+            print('fill in the character data')
+            
+        

@@ -4,6 +4,7 @@ from estudos2c import Person, DataCollector
 def main():
     collector = DataCollector()
     data = Person()
+    list_ = Person.list_person()
     
     print('MENU')
     print()
@@ -25,5 +26,5 @@ def main():
             break
         
         elif option == '3':
-            Person.list_person()
+            return data.list_person()
 main()
