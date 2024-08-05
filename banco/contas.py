@@ -8,11 +8,13 @@ class Conta(abc.ABC):
         self.saldo = saldo
 
     @abc.abstractmethod
-    def sacar(self, valor): ...
+    def sacar(self, valor: float)-> float: ...
 
-    def depositar(self, valor):
+    def depositar(self, valor: float)-> float:
         self.saldo += valor
         self.detalhes(f'(DEPÓSITO {valor})')
+        return self.saldo
+    
 
     def detalhes(self, msg=''):
         print(f'O seu saldo é {self.saldo:.2f} {msg}')
