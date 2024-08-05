@@ -19,6 +19,9 @@ class Pessoa:
     def idade(self, idade: int):
         self._idade = idade
 
+    def __repr__(self):
+        pass
+
 class Cliente(Pessoa):
     def __init__(self, nome: str, idade: int) -> None:
         super().__init__(nome, idade)
