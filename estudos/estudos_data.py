@@ -1,12 +1,16 @@
-from dataclasses import dataclass
+# from collections import namedtuple
 
-@dataclass
-class Pessoa:
-    nome: str
-    idade: int
+# Carta = namedtuple(
+#     'Carta', ['valor', 'nipe'],
+#      defaults=['VALOR', 'NAIPE'] )
+# as_espadas = Carta('A', 'Espadas')
+# print(as_espadas)
+# print(as_espadas[0])
+# print(as_espadas[1])
+# print(as_espadas._asdict())
 
+from typing import NamedTuple
 
-p1 = Pessoa('vinicius', 21 )
-
-if __name__== '__main__':
-    print(p1)
+class Carta(NamedTuple):
+    valor:str = 'VALOR'
+    naipe: str = 'NAIPE'
