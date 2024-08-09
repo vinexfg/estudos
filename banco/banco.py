@@ -9,8 +9,15 @@ class Banco:
             clientes: list[pessoas.Pessoa] | None = None,
             contas: list[int] | None = None,
     ):
-        self.agencias = agencias
-        self.clientes = clientes
-        self.contas = contas
+        self.agencias = agencias or []
+        self.clientes = clientes or []
+        self.contas = contas or []
+
+
+        
+
+    def autenticar(self, cliente, conta):
+        ...
+         
 
        
