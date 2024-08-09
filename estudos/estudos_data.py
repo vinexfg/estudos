@@ -1,19 +1,11 @@
-# from collections import namedtuple
+class Mylist:
+    def __init__(self) -> None:
+        self._data= {}
 
-# Carta = namedtuple(
-#     'Carta', ['valor', 'nipe'],
-#      defaults=['VALOR', 'NAIPE'] )
-# as_espadas = Carta('A', 'Espadas')
-# print(as_espadas)
-# print(as_espadas[0])
-# print(as_espadas[1])
-# print(as_espadas._asdict())
+    def append(self, value):
+        self._data[0] = value
 
-from typing import NamedTuple
-
-class Carta(NamedTuple):
-    valor:str = 'VALOR'
-    naipe: str = 'NAIPE'
-
-as_espadas = Carta('A')
-print(as_espadas._asdict())
+if __name__=='__main__':
+    lista = Mylist()
+    lista.append('maria')
+    print(lista)
