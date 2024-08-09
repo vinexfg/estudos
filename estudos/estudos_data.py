@@ -14,3 +14,6 @@ from typing import NamedTuple
 class Carta(NamedTuple):
     valor:str = 'VALOR'
     naipe: str = 'NAIPE'
+
+as_espadas = Carta('A')
+print(as_espadas._asdict())
