@@ -6,7 +6,7 @@ from dataclasses import dataclass
 class Loan:
     
     
-    def loan_time(self):
-        
+    def loan_time(self, value):
+        return None
 
 
