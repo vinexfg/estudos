@@ -1,12 +1,6 @@
 from datetime import datetime
-from pytz import timezone
 
+fmt =  '%d/%m/%Y %H/%M/%S'
 
-# data_str = "2022-04-20 07:49:23"
-# data_str_fmt = '%Y-%m-%d %H:%M:%S'
-
-# data = datetime.strptime(data_str, data_str_fmt)
-# print(data)
-
-data = datetime.now()
-print(data)
+data_inicio = datetime.strptime('20/04/1987 09:30:30', fmt)
+data_fim = datetime.strptime('12/12/2022 08:20:20', fmt)
