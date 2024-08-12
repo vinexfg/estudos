@@ -1,13 +1,11 @@
 import os
-caminho = os.path.join('Desktop', 'curso', 'arquivo.txt')
-# print(caminho)
 
 
-# diretorio, arquivo = os.path.split(caminho)
-# caminho_arquivo, extensao_arquivo = os.path.splitext(arquivo)
-# print(caminho_arquivo, extensao_arquivo)
+caminho = os.path.join('C:\\Users\\vinys\\OneDrive\\Tarefas\\estudos')
+print(caminho)
 
 
+for item in os.listdir(caminho):
+    print(item) 
 
-print(os.path.abspath('.'))
-print(os.path.basename(caminho))
+diretorio_atual = 'C:\\Users\\vinys\\OneDrive\\Tarefas\\estudos'
