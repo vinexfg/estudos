@@ -26,3 +26,4 @@ string_json = '''
 
 
 print(json.loads(string_json))
+print(json.dumps(string_json, ensure_ascii=False, indent=2))
