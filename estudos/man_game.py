@@ -1,6 +1,8 @@
 import json
-from pprint import pprint
-from typing import TypedDict
+from pprint import pprint # um print mais bonito
+from typing import TypedDict #permite criar um class para que use no json
+# fica mais facil de achar quando for fazer o print('filme[aqui voce achar as coisas da sua class]
+# ')
 
 
 class Movie(TypedDict):
@@ -26,7 +28,13 @@ string_json = '''
   "budget": null
 } '''
 
-filme: Movie = json.loads(string_json)
+filme: Movie = json.loads(string_json) # transformando um dicionario para o json
+print(filme)
 
-# pprint(filme)
-print(filme['title'])
+# # pprint(filme)
+# print(json.dumps(filme, ensure_ascii=False, indent=2))
+# #deixa mais facil de ler o json
+
+
+json_string = json.dumps(filme, ensure_ascii=False, indent=2)
+print(json_string)
