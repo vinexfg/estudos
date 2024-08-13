@@ -31,10 +31,10 @@ string_json = '''
 filme: Movie = json.loads(string_json) # transformando um dicionario para o json
 print(filme)
 
-# # pprint(filme)
-# print(json.dumps(filme, ensure_ascii=False, indent=2))
-# #deixa mais facil de ler o json
+# pprint(filme)
+print(json.dumps(filme, ensure_ascii=False, indent=2))
+#deixa mais facil de ler o json
 
 
 json_string = json.dumps(filme, ensure_ascii=False, indent=2)
-print(json_string)
+print(json_string) # facilita a leitura do json

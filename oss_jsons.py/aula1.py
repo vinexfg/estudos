@@ -13,17 +13,32 @@ print(os.path.dirname(__file__))
 
 
 
-string_json = '''
+filme = '''
 {
   "title": "O Senhor dos Anéis: A Sociedade do Anel",
   "original_title": "The Lord of the Rings: The Fellowship of the Ring",
   "is_movie": true,
   "imdb_rating": 8.8,
   "year": 2001,
-  "characters": ["Frodo", "Sam", "Gandalf", "Legolas", "Boromir"],
+  "characters": [
+    "Frodo",
+    "Sam",
+    "Gandalf",
+    "Legolas",
+    "Boromir"
+  ],
   "budget": null
 } '''
 
 
-print(json.loads(string_json))
-print(json.dumps(string_json, ensure_ascii=False, indent=2))
+# print(json.loads(filme))
+# print('-' * 80)
+# print(json.dumps(filme, ensure_ascii=False, indent=2))
+
+
+with open(CAMINHO_ABSOLUTO_ARQUIVO, 'w') as arquivo:
+    json.dump(filme, arquivo, ensure_ascii=False, indent=2)
+
+with open(CAMINHO_ABSOLUTO_ARQUIVO, 'r') as arquivo:
+    filme_do_json = json.load(arquivo)
+    print(filme_do_json)
