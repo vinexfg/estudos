@@ -1,3 +1,8 @@
+import json
+from pprint import pprint
+
+
+
 string_json = '''
 {
   "title": "O Senhor dos Anéis: A Sociedade do Anel",
@@ -8,3 +13,8 @@ string_json = '''
   "characters": ["Frodo", "Sam", "Gandalf", "Legolas", "Boromir"],
   "budget": null
 } '''
+
+filme = json.loads(string_json)
+
+# pprint(filme)
+print(filme['title'])
