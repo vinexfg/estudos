@@ -1,5 +1,17 @@
 import json
 from pprint import pprint
+from typing import TypedDict
+
+
+class Movie(TypedDict):
+    title: str
+    original_title: str
+    is_movie: bool
+    imdb_rating: float
+    year: int
+    characters: list[str]
+    budget: None | float
+
 
 
 
@@ -14,7 +26,7 @@ string_json = '''
   "budget": null
 } '''
 
-filme = json.loads(string_json)
+filme: Movie = json.loads(string_json)
 
 # pprint(filme)
 print(filme['title'])
