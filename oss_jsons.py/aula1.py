@@ -1,6 +1,8 @@
 import json
 import os
 
+
+
 NOME_ARQUIVO = 'aula177.json'
 CAMINHO_ABSOLUTO_ARQUIVO = os.path.abspath(
     os.path.join(
