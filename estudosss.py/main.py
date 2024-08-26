@@ -3,7 +3,7 @@
 # ao final perguntar se ele deseja realmente salvar a senha
 # SEGUNDO ETAPA -- gerar senhas seguras
 
-class Passaword:
+class Password:
     def __init__(self):
         self.caracteres_permitidos = 25
         self.minimo_caracteres = 6
@@ -23,3 +23,5 @@ class Passaword:
             return False
         return True
     
+print('enter your passaword')
+passaword_entered = input('Passaword: ')
