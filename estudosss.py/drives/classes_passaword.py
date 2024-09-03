@@ -3,6 +3,7 @@ class Password:
         self.caracteres_permitidos = 25
         self.minimo_caracteres = 6
         self.caracteres_necessarios = ['!', '@', '#', '%', '&', '*']
+        ''
         
     def checker(self, Passaword):
         if len(Passaword) > self.caracteres_permitidos:
