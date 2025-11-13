@@ -23,6 +23,10 @@ main{
     background-color: var(--cor-de-fundo)
 }
 
+ul{
+    display: flex;
+}
+
 .Reservar{
     background-color: var(--cor-de-fundo);
     border-radius: 50px;
@@ -31,6 +35,7 @@ main{
     cursor: pointer;
 }
 
-.Reservar:houve{
+.Reservar:hover{
     background-color: black;
+    color: white;
 }
